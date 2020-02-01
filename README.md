@@ -41,3 +41,7 @@ docker create --name nexus \
 ```bash
 docker start nexus
 ```
+
+```bash
+docker exec -it nexus /bin/bash -c "cat /nexus-data/admin.password"
+```
