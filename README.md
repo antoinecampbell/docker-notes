@@ -38,3 +38,6 @@ docker create --name nexus \
     sonatype/nexus3
 ```
 
+```bash
+docker start nexus
+```
