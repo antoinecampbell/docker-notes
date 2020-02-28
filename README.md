@@ -45,3 +45,23 @@ docker start nexus
 ```bash
 docker exec -it nexus /bin/bash -c "cat /nexus-data/admin.password"
 ```
+
+## SonarQube
+```bash
+docker pull sonarqube:8-community
+```
+
+```bash
+docker volume create sonarqube
+```
+
+```bash
+docker create --name sonarqube \
+    -p 9000:9000 \
+    -v sonarqube:/opt/sonarqube \
+    sonarqube:8-community
+```
+
+```bash
+docker start sonarqube
+```
